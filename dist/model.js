@@ -36,8 +36,7 @@ saveInventoryItem({
     // inventoryType:InventoryItemType.Computer,
     inventoryType: "Computer",
     trackingNumber: "MD12345",
-    createDate: new Date(),
-    findIndex: []
+    createDate: new Date()
     // originalCost: 3234
 });
 // Much like a function parameter introduces a variable to a function, 

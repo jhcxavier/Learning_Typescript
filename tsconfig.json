@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "outDir": "dist"
+        "outDir": "dist",
+        "allowJs": true,
+        "checkJs": true,
+        "lib": ["ES2015.Promise", "WebWorker", "DOM"]
+        //the "lib" only affects the typing not the code
     }
 }

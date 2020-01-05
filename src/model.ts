@@ -31,7 +31,7 @@ interface InventoryItem {
     readonly trackingNumber: string;
     createDate: Date;
     originalCost?: number;
-    findIndex:any[];
+   
 
     // Both ways below are correct and equivalent
     addNote?(note:string):string;
@@ -57,8 +57,7 @@ saveInventoryItem({
     // inventoryType:InventoryItemType.Computer,
     inventoryType:"Computer",
     trackingNumber:"MD12345",
-    createDate: new Date(),
-    findIndex:[]
+    createDate: new Date()
     // originalCost: 3234
 });
 // Much like a function parameter introduces a variable to a function, 
@@ -71,3 +70,5 @@ function clone<T>(source:T):T{
 }
 
 const cloned = clone(inventoryItem)
+
+declare var Vue: any;
